@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --body-bg-color: #121214;
+  --text-color: #E1E1E6;
+  --title-color: #04D361;
+  --form-color: #A8A8A8;
+  --bg-button-color: #8257e5;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 50vw 1fr;
+}
+
+.col-left {
+  height: 100vh;
+  background-color: var(--body-bg-color);
+  padding: 5rem 3.6rem;
+}
+
+.col-left > img {
+  width: 38.9rem;
+  margin-bottom: 9.2rem;
+}
+
+.col-left > section > h2 {
+  color: var(--title-color);
+  font-size: 2.4rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  line-height: 2.8;
+}
+
+.col-left > section > p,section > form > label{
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  
+}
+
+.col-left > section > P:nth-child(3){
+  font-weight: 400;
+  line-height: 2;
+  margin-bottom: 5rem;
+}
+
+.col-left > section > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-left > section > form > .input-button {
+  border-left: .5rem solid var(--title-color);
+  display: flex;
+  margin-top: 2rem;
+  width: 60vw;
+  position: absolute;
+}
+
+.col-left > section > form > .input-button > input{
+  width: 89.8rem;
+  height: 4.8rem;
+  padding: 1rem;
+  border-color:transparent;
+}
+
+.col-left > section > form > .input-button > button {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: var(--bg-button-color);
+  border-color: transparent;
+}
+
+.col-left > section > .read {
+  display: flex;
+  align-items: center;
+  margin-top: 9rem;
+}
+
+.col-left > section > .read > a{
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--bg-button-color);
+  margin-right: 1rem;
+  
+
+}
+.col-right > img {
+  width: 50vw;
+  height: 100%;
+  
+  object-fit: cover;
+  object-position: 70%;
+}

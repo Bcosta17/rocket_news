@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Rocket News</title>
+</head>
+<body>
+    <div class="col-left">
+      <img src="./assets/logo.svg" alt="">
+      <section>
+        <h2>atualize ideias e informações em 5 minutos.</h2>
+        <p>tudo que você precisa saber para começar seu dia bem e informado</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, doloribus. Voluptatibus mollitia nesciunt velit deserunt consectetur temporibus voluptates a totam?</p>
+        <form action="">
+          <label for="email">Insira seu e-mail:</label>
+          <div class="input-button">
+            <input type="text" id="email" placeholder="exemplo@email.com">
+            <button onclick="sendAlert()"><img src="./assets/send.svg" alt=""></button>
+          </div>
+        </form>
+        <div class="read">
+          <a href="">deixe-me ler primeiro</a>
+          <img src="./assets/arrow-right.svg" alt="">
+        </div>
+      </section>
+    </div>
+    <div class="col-right">
+      <img src="./assets/read_news.jpg" alt="">
+    </div>
+    <script>
+      function sendAlert() {
+        return alert("email enviado")
+      }
+    </script>
+</body>
+</html>
